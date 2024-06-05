@@ -7,13 +7,16 @@
     "test": "nx run-many --target=test --projects=server,client"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.19",
     "@nestjs/common": "9.2.1",
     "@nestjs/core": "9.2.1",
     "@nestjs/platform-express": "9.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router": "^6.3.0",
-    "react-router-dom": "6.4.3",
+    "react-router-dom": "^6.23.1",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
