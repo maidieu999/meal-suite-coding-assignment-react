@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
 import App from './app/app';
+import { AppProvider } from './app/contexts/AppContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +11,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <BrowserRouter>
-    <App />
+    <AppProvider>
+      <App />
+    </AppProvider>
   </BrowserRouter>
 );
