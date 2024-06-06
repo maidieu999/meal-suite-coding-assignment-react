@@ -3,7 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
-import { Button, Stack } from '@mui/material';
+import { Button, Stack, Typography } from '@mui/material';
 import { TicketItem } from '../../components/TicketItem';
 import { useNavigate } from 'react-router-dom';
 import { CreateTicketModal } from '../../components/CreateTicketModal';
@@ -101,7 +101,7 @@ export function Tickets() {
             ))}
           </List>
         ) : (
-          <span>There are no tickets</span>
+          <Typography mt={2}>There are no tickets</Typography>
         )}
       </Box>
       <CreateTicketModal
